@@ -1,6 +1,8 @@
 package ar.edu.unahur.obj2.ejercicio1;
 import java.util.Scanner;
 
+//Leer 10 datos numéricos y mostrarlos en orden inverso
+
 public class Ejercicio1 {
 
     public static void main (String[]args) {

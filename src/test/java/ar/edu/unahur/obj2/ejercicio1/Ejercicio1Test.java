@@ -7,6 +7,6 @@ import static org.testng.Assert.*;
 public class Ejercicio1Test {
 
     @Test
-    public void testOrdenar() {
+    public void testEjercicio1() {
     }
 }
