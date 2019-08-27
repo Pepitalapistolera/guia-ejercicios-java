@@ -11,13 +11,19 @@ public class Administrativo extends Empleado{
         this.hsMes = hsMes;
     }
 
-    public Administrativo(float hsExtra, float hsMes) {
-        this.hsExtra = hsExtra;
-        this.hsMes = hsMes;
-    }
 
     @Override
     public float getSueldo() {
         return (getSueldoBase()*(hsExtra*1.5f)+ hsMes) /hsMes ;
+    }
+
+
+    @Override
+    public String toString() {
+        super.toString();
+        return "Administrativo{" +
+                "hsExtra=" + hsExtra +
+                ", hsMes=" + hsMes +
+                '}';
     }
 }

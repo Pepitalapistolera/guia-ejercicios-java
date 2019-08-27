@@ -59,7 +59,14 @@ public abstract class Empleado {
     public abstract float getSueldo();
 
 
-
-
-
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "DNI='" + DNI + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", email='" + email + '\'' +
+                ", sueldoBase=" + sueldoBase +
+                '}';
+    }
 }

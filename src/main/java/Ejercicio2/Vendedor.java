@@ -7,10 +7,6 @@ public class Vendedor extends Empleado{
         this.totalVentas = totalVentas;
     }
 
-    public Vendedor(float comision, float totalVentas) {
-        this.comision = comision;
-        this.totalVentas = totalVentas;
-    }
 
     public float getComision() {
         return comision;
@@ -35,5 +31,14 @@ public class Vendedor extends Empleado{
     @Override
     public float getSueldo() {
         return ((getSueldoBase()+comision)*totalVentas)/100;
+    }
+
+    @Override
+    public String toString() {
+        super.toString();
+        return "Vendedor{" +
+                "comision=" + comision +
+                ", totalVentas=" + totalVentas +
+                '}';
     }
 }
