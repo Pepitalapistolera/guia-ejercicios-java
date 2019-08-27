@@ -33,6 +33,7 @@ public class EmpleadoTest {
         for (Empleado e: empleados) {
             System.out.println(e);
         }
+        empleados.stream().forEach(d -> System.out.println(d.getSueldo()));
 
     }
 }
