@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public class Empleado {
+public abstract class Empleado {
     private String DNI;
     private String nombre;
 
@@ -56,7 +56,7 @@ public class Empleado {
         this.sueldoBase = sueldoBase;
     }
 
-    public Empleado(){}
+    public abstract float getSueldo();
 
 
 
