@@ -35,10 +35,11 @@ public class Vendedor extends Empleado{
 
     @Override
     public String toString() {
-        super.toString();
+
         return "Vendedor{" +
                 "comision=" + comision +
                 ", totalVentas=" + totalVentas +
+                super.toString() +
                 '}';
     }
 }
