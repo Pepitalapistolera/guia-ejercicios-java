@@ -1,5 +1,7 @@
 package Ejercicio2;
 
+import java.util.Objects;
+
 public class Vendedor extends Empleado{
     public Vendedor(String DNI, String nombre, String apellido, String email, float sueldoBase, float comision, float totalVentas) {
         super(DNI, nombre, apellido, email, sueldoBase);
@@ -41,5 +43,19 @@ public class Vendedor extends Empleado{
                 ", totalVentas=" + totalVentas +
                 super.toString() +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vendedor vendedor = (Vendedor) o;
+        return Float.compare(vendedor.comision, comision) == 0 &&
+                Float.compare(vendedor.totalVentas, totalVentas) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(comision, totalVentas);
     }
 }
